@@ -5,17 +5,17 @@ import Appname from './components/Appname'
 import AddTodo from './components/AddTodo'
 import Item1 from './components/TodoItem1'
 import Item2 from './components/Todoitem2'
-
-
+import './App.css';
 function App() {
   return <>
-    <center class='todo-container'>
+    <center className='todo-container'>
     <Appname/>
     <AddTodo/>
-    <br></br>
+  <div className="item-container">
     <Item1/>
-   <br></br>
     <Item2/>
+  </div>
+    
     </center>
     
     </>
