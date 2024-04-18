@@ -3,8 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Appname from './components/Appname'
 import AddTodo from './components/AddTodo'
-import Item1 from './components/TodoItem1'
-import Item2 from './components/Todoitem2'
+import TodoItem from './components/TodoItem'
 import './App.css';
 function App() {
   return <>
@@ -12,8 +11,9 @@ function App() {
     <Appname/>
     <AddTodo/>
   <div className="item-container">
-    <Item1/>
-    <Item2/>
+    <TodoItem date="12/04/2023" name="Buy Milk"></TodoItem>
+    <TodoItem date="12/04/2023" name="Buy fruits"></TodoItem>
+    
   </div>
     
     </center>
