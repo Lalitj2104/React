@@ -1,6 +1,6 @@
 import Item from "./Item";
 
-const Fooditems =({items})=>{
+const Fooditems =({items })=>{
     return (
         <ul className="list-group">
         {

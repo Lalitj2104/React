@@ -1,5 +1,5 @@
 function Heading(){
-    return <h1 className="fw-bolder">
+    return <h1 className="fw-bolder  ">
         Healthy Food
       </h1>
 }
