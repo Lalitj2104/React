@@ -12,13 +12,26 @@ function App() {
 
   //another way of during the ul is mapping
   // let foodItems=[];
-  let foodItems=['Salad','Sprouts','Fruits','Green beans','Milk','green']
+  // let foodItems=[,'Green beans','Milk','green']
   
+  let [foodItems,setFoodItems]=useState(['Salad','Sprouts','Fruits'])
+  const handleOnKeyDown=(e)=>{
+    if(e.key==="Enter"){
+      let newFoodItem=e.target.value;
+      e.target.value="";
+      let newItems=[...foodItems,newFoodItem]
+      setFoodItems(newItems);
+
+    }
+
+}
   return <>
   <Container>
       <Heading/>
-      <Search/>
+      <Search handleOnKey={handleOnKeyDown}/>
+      {/* <p>{textToShow}</p> */}
       <Error items={foodItems}></Error>
+
       <Fooditems items={foodItems}></Fooditems>   
     </Container>
     <Container>

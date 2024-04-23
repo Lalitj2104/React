@@ -1,9 +1,9 @@
 import styles from './search.module.css'
 
-function Search(){
+const Search=({handleOnKey})=>{
     return <> 
     <input className={styles.search} placeholder="Enter food item here..."
-    onChange={(e)=>console.log(e.target.value)}
+    onKeyDown={handleOnKey}
     ></input>
 
 </>
