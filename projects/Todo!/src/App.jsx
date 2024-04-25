@@ -8,6 +8,7 @@ import './App.css';
 
 
 function App() {
+
   const todoItems =[
     {
       name: "buy milk",
@@ -22,6 +23,7 @@ function App() {
       date:"right now",
     },
   ];
+  
   return <>
     <center className='todo-container'>
     <Appname/>
